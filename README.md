@@ -26,6 +26,20 @@
 
 > 官方其实更推荐 UART 连接，但我尝试了 UART，无法获取数据，只有 I2C 可以成功获取到数据。
 
+### 接线
+
+| SFA30 Pin | ESP32 Pin |
+| ---- | ---- |
+| Pin 1 | VIN （esp32 电源）|
+| Pin 2 | GND |
+| Pin 3 | D21（SDA）|
+| Pin 4 | D22（SCL）|
+| Pin 5  | GND |
+| Pin 6 | 不接 |
+| Pin 7 | 不接 |
+
+### 开发
+
 板子开发使用 Arduino，需要下载 [Sensirion I2C SFA3X Arduino Library](https://github.com/Sensirion/arduino-i2c-sfa3x)，也可以直接用官方提供的[例子代码](https://github.com/Sensirion/arduino-snippets/blob/main/SFA30_I2C_minimal_example/SFA30_I2C_minimal_example.ino)。Sensiron 的开发者支持可以说做得非常到位 👍，所有事情基本都可以直接参考官方文档。
 
 代码逻辑很简单：从板子中读出数据，然后直接通过 HTTP 发送到一个 HTTP Server 上。然后在 HTTP Server 做后续处理。板子上只需要做读数据和发送请求两件事。作为完全不懂嵌入式的小白一枚，用 GPT 很容易就实现了。

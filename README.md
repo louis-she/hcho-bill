@@ -2,7 +2,7 @@
   <img src="./assets/hcho-bill.png" style="width: 400px;" alt="bill">
 </p>
 
-该仓库主要用来放一些 Sensiron SFA30 传感器 DIY 的内容，完整的甲醛笔记请参考[城璐的甲醛狩猎笔记（还未完成）](https://chenglu.me/blogs/hcho-bill)。
+该仓库主要用来放一些 Sensiron SFA30 传感器 DIY 的内容，完整的甲醛笔记请参考[城璐的甲醛狩猎笔记](https://chenglu.me/blogs/hcho-bill)。
 
 # 🏁 小米 5S 传感器和 SFA30 传感器的对比
 
